@@ -1,0 +1,79 @@
+<html>
+<head>
+	<title>Resume Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header>
+		<div class="rows">
+			<ul class="main-nav">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="Projects.html">Robotics</a></li>
+				<li><a href="pic.jpg">Astronomy</a></li>
+				
+			</ul>
+			
+		</div>
+
+		<h1>Simultaneous Localization And Mapping</h1>
+		<br><hr>
+		<div class="info">
+		 		
+		 			My Contributions Highlights:
+		 			<br>
+		 		<br>
+		 		<ul>
+		 			<li>Wrote program for GraphSLAM as a function which takes in sensor data and outputs the cordinates of the map</li>
+		 			<li>Led the team of 5 members to implement and test different sub-sections of overall system which includes the computer program, electrical circuitry and mechanical assembly</li>
+		 			<li>Developed and integrated the sensors to mimic the function of a depth camera like the Kinect and wrote program for sensor fusion which to give clean data </li>
+		 		</ul>
+		 	
+		 </div>
+		
+		<div class="video" align="center">
+			<video width="600" controls>
+				<source src="projects/SLAM.mp4" type="video/mp4">
+				Your browser does not support HTML5 video.
+			</video>
+		</div>
+		 
+		<div class ="info">
+			<p>
+			SLAM is very computational intensive process
+			and it generally involves the use of stereo
+			cameras. This thus increases the costs. Our
+			approach towards the project is to build an
+			affordable yet effective robot by utilizing from
+			existing inventories and making use of only
+			open-source contents.
+		</p>
+		</div>
+		
+		 <div class='info'>
+	 		The first stage of the project was map generation using Gmapping on the Gazebo platform with a model of Kobuki
+			TurtleBot. We had created a simple maze like arena and the robot was a part of it. The map generated through SLAM was decently similar to the
+			actual arena.
+		 </div>
+
+
+		  <div class='info'>
+	 		In the second stage of the project, the team built a
+			physical robot with an ultrasonic sensor and a
+			camera. Each landmark had a unique colour.
+			The ultrasonic sensor measure the distance
+			between the robot and a landmark and the
+			camera identified that landmark. The distance measured from the ultrasonic sensors and the angle from the servo motor were used as inputs to the GraphSLAM function.
+			
+		 </div>
+		<div class="ending" >
+			<hr><br>
+			<p>
+				Contact Info:<br>
+				Email: vasista1997@gmail.com | Phone: 0091 9521364882
+			</p>
+		</div>
+	</header>
+</body>
+
+</html>
+
