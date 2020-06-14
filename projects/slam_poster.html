@@ -1,36 +1,43 @@
 <html>
 <head>
 	<title>Resume Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+<style>
+body {
+  background-color: #FFF1AA;
+  background-size: cover;
+}
+</style>
 <body>
-	<header>
-		<div class="rows">
+	<!-- <header> -->
 			<ul class="main-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Robotics</a></li>
-				<li><a href="astronomy.html">Astronomy</a></li>								
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../projects.html">Robotics</a></li>
+				<li><a href="../astronomy.html">Astronomy</a></li>								
 			</ul>
-			
-		</div>
 
-		<h1>Simultaneous Localization And Mapping</h1>
-		<br><hr>
-		<div class ="info">
+		<h1 class="titles">Graph-SLAM</h1>
+		<div class ="project_desc">
 			<p>
 			Our motivation for this project was to develop a robot that can perform SLAM with decent accuracy while keeping the development costs as low as possible. This project was in collaboration with IEEE NITK and was presented in the NITK Project Expo 2018.
 		</p>
 		</div>
 		
+		<div class="iframe_wrapper">
+		<iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/7S-eqMZtGkU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		
-		<div class="video" align="center">
+
+		
+		<!-- <div class="video" align="center">
 			<video width="600" controls>
 				<source src="projects/SLAM.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
-		</div>
+		</div> -->
 		 
-		<div class="info">
+		<div class ="project_desc">
 		 		
 		 			My Contributions Highlights:
 		 			<br>
@@ -44,14 +51,14 @@
 		 	
 		 </div>
 		
-		 <div class='info'>
+		 <div class ="project_desc">
 	 		The first stage of the project was map generation using Gmapping on the Gazebo platform with a model of Kobuki
 			TurtleBot. We had created a simple maze like arena and the robot was a part of it. The map generated through SLAM was decently similar to the
 			actual arena.
 		 </div>
 
 
-		  <div class='info'>
+		  <div class ="project_desc">
 	 		In the second stage of the project, the team built a
 			physical robot with an ultrasonic sensor and a
 			camera. Each landmark had a unique colour.
@@ -60,14 +67,14 @@
 			camera identified that landmark. The distance measured from the ultrasonic sensors and the angle from the servo motor were used as inputs to the GraphSLAM function.
 			
 		 </div>
-		<div class="ending" >
+		<!-- <div class="ending" >
 			<hr><br>
 			<p>
 				Contact Info:<br>
 				Email: vasista1997@gmail.com | Phone: 0091 9521364882
 			</p>
 		</div>
-	</header>
+	</header> -->
 </body>
 
 </html>

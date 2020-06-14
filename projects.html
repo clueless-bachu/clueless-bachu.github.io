@@ -1,69 +1,60 @@
 <html>
 <head>
-	<title>Resume Website</title>
+	<title>Projects</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+<style>
+body {
+  background-color: #FFF1AA;
+  background-size: cover;
+}
+</style>
 <body>
-	<header>
-		<div class="rows">
-			<ul class="main-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Robotics</a></li>
-				<li><a href="astronomy.html">Astronomy</a></li>				
-			</ul>
-		</div>
-
-
-		<h1>Projects</h1>
-		<div class="info">
-		<p>These are a few robots I have built or worked on. I enjoy the hands-on experience gained from these projects. Hope my projects inspire all who are interested in robotics</p>
-		</div><br><hr>
-		<ul class="projects">
-			<li><a href="slam_poster.html">
-				<div class="gallery">
-				    <img src="projects/slam_poster.jpg" alt="SLAM Poster" style="width:250px;height:128px;" >
-				  <div class="desc">Simultaneous Localization And Mapping: <br> A robot that can map an arena with landmarks using cost-effective sensors</div>
-				</div>
-				</a>
-			</li>
-
-			<li><a href="rover.html">
-				<div class="gallery">					
-				    <img src="projects/rover_img.jpeg" alt="Rover" style="width:250px;height:128px;"  >			  
-				  <div class="desc">Infinity 3.0:<br>A planetary rover that can go over rough terrain. Inspired from the Martian rover Curiosity</div>
-				</div>
-				</a>
-			</li>
-
-			<li><a href="crazyflie.html">
-				<div class="gallery">					
-				    <img src="projects/crazyflie.jpg" alt="Craziflie" style="width:250px;height:128px;" >				  
-				  <div class="desc">Craziflie:<br>A Micro Quadcopter which was interfaced with MATLAB and ROS to run any path-planning code </div>
-				</div></a>
-			</li>
-
-			<li><a href="fish.html">
-				<div class="gallery">				
-				    <img src="projects/fish tail.jpg" alt="Robotic Fish"  style="width:250px;height:128px;">			  
-				  <div class="desc">Robot Fish:<br>A bio-inspired robot fish inspired from carps that can swim underwater and pursue underwater tragets</div>
-				</div></a>
-			</li>
-
-			<li><a href="material_robot.html">
-				<div class="gallery">
-				    <img src="projects/material handling.jpg" alt="5Terre" style="width:250px;height:128px;" >
-				  <div class="desc">Material Handling Robot:<br>An autonomous mobile robot with a robotic arm and universal gripper to pick up and relocate objects</div>
-				</div></a> 
-			</li>
+		<ul class="main-nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="projects.html">Projects</a></li>
+			<li><a href="astronomy.html">Astronomy</a></li>	
 		</ul>
-		<div class="ending" >
-			<hr><br>
-			<p>
-				Contact Info:<br>
-				Email: vasista1997@gmail.com | Phone: 0091 9521364882
-			</p>
-		</div>
-	</header>
+
+		<h1 class="titles">PROJECTS</h1>
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a href="projects/slam_poster.html">
+	      <img src="projects/slam_poster.png" alt="SLAM" width="600" height="400">
+	    </a>
+	    <div class="desc">Graph-SLAM</div>
+	  </div>
+	</div>
+
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a href="projects/rover.html">
+	      <img src="projects/rover_img.jpeg" alt="Rover" width="600" height="400">
+	    </a>
+	    <div class="desc">Infinity 3.0, Planetary Rover</div>
+	  </div>
+	</div>
+
+	<div class="responsive">
+	  <div class="gallery">
+	    <a href="projects/crazyflie.html">
+	      <img src="projects/crazyflie.jpg" alt="crazyflie" width="600" height="400">
+	    </a>
+	    <div class="desc">Path Planning with Craziflie</div>
+	  </div>
+	</div>
+
+	<!-- <div class="responsive">
+	  <div class="gallery">
+	    <a href="img_mountains.jpg">
+	      <img src="projects/material handling.jpg" alt="iBT" width="600" height="400">
+	    </a>
+	    <div class="desc">iBT, Autonomous Material Handling Robot</div>
+	  </div>
+	</div> -->
+
 </body>
 
 </html>

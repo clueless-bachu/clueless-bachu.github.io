@@ -1,35 +1,42 @@
 <html>
 <head>
 	<title>Resume Website</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="../style.css">
 </head>
+<style>
+body {
+  background-color: #FFF1AA;
+  background-size: cover;
+}
+</style>
 <body>
-	<header>
-		<div class="rows">
+	<!-- <header> -->
 			<ul class="main-nav">
-				<li><a href="index.html">Home</a></li>
-				<li><a href="projects.html">Robotics</a></li>
-				<li><a href="astronomy.html">Astronomy</a></li>				
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../projects.html">Robotics</a></li>
+				<li><a href="../astronomy.html">Astronomy</a></li>				
 			</ul>
 			
-		</div>
 
-		<h1>CrazyFlie</h1>
-		<br><hr>
-		<div class ="info">
+		<h1 class="titles">CrazyFlie</h1>
+
+		<div class ="project_desc">
 			<p>
 			Programming the Crazyflie was a part of my internship in Indian Institute of Science, Bangalore in the Autonomous Vehicles Lab under Prof. Ashwini Ratnoo. Our motivation was to integrate the ROS framework with MATLAB Simulink interface for quick testing for UAV guidance algorithms.
-					</p>
+			</p>
 		</div>
 
 		
-		<div class="video" align="center">
+		<!-- <div class="video" align="center">
 			<video width="600" controls>
 				<source src="projects/crazyflie.mp4" type="video/mp4">
 				Your browser does not support HTML5 video.
 			</video>
+		</div> -->
+		<div class="iframe_wrapper">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/vTRUcO5LSzg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
-		 <div class="info">
+		 <div class ="project_desc">
 		 		
 		 			My Contributions Highlights:
 		 			<br>
@@ -42,7 +49,7 @@
 		 	
 		 </div>
 
-		<div class ="info">
+		<div class ="project_desc">
 			<p>
 			Robot Type: Crazyflie 2.0
 			Lab: Autonomus Vehicles Lab, under <a href="https://scholar.google.com/citations?user=0VIu47cAAAAJ&hl=en">Dr Ashwini Ratnoo</a> <br>
@@ -52,14 +59,14 @@
 		</p>
 		</div>
 
-		<div class="ending" >
+		<!-- <div class="ending" >
 			<hr><br>
 			<p>
 				Contact Info:<br>
 				Email: vasista1997@gmail.com | Phone: 0091 9521364882
 			</p>
 		</div>
-	</header>
+	</header> -->
 </body>
 
 </html>

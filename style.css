@@ -2,146 +2,93 @@
 {
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: serif;
 }
 
-body {
-		background-color: #fff;
-	}
-
-a
-{
-		text-decoration: none;
-		color: #000
+.info{
+	font-size: 30px;
+	position: absolute;
+	bottom: 300px;
+	right: 300px;
+	max-width:400px;
+	color: #172457;
 }
 
-hr{
-	/*margin-left: 200px;
-	margin-right: 200px;*/
-	color: #000
-	solid
-
-}
-h1
-{
-	font-size: 300%;
-	margin-top: 50px;
-	margin-left: 200px;
-	color: #000;
-
+.ending{
+	position: absolute;
+	bottom: 50px;
+	right: 300px;
+	color: #172457;
 }
 
-
-ul.main-nav
-{
-	text-align: right;
-	margin-right: 10px;
-	margin-left: 200px;
-}
-
-ul.blog-links
-{
-	/*text-align: right;*/
-	margin-right: 10px;
-	margin-top: 20px;
-	margin-left: 220px;
+ul.main-nav{
+	background-color: #AA3939;
+	padding: 20px 0 20px 0;
+	text-align: center;
 }
 
 ul.main-nav
  li{
-	display: inline-block;
-	margin-top: 30px;
-
+	display: inline;
 }
 
 ul.main-nav
  li a{
-	text-decoration: none;
-	color: #000 ;
-	background-color: #DCDCDC;
-	font-size: large;
-	margin-right: 15px;
-	border: 1px solid #000;
+	color: #FFAAAA	 ;
+	font-size: 30px;
 	padding: 7px 20px;
+	text-decoration: none;
 	
 
 }
 
 ul.main-nav
  li a:hover{
-	background-color: #fff;
-	transition: 0.2s ease
+ 	color: #FFF2AA;
+	background-color: #FFAAAA;
+	transition: 0.5s ease
 }
 
+h1.titles{
+	text-align: center;
+	font-size: 70px;
+	padding: 100px;	
+	background: url('retro_back.png');
+	color: #172457;
+}
 
 div.gallery {
-	margin-left: 20px;
-	margin-top: 50px;
-	margin-bottom: 20px;
-    width: 250px;
-    background-color: #DCDCDC;
-    border: 1px solid #000;
-
+  background-color: #AA3939;
 }
 
 div.gallery:hover {
-    background-color: #fff;
-    
-    transition: 0.2s ease
+  background-color: #7F1E1E;
+  transition: 0.5s ease
 }
 
 div.gallery img {
-    height: 200px;
-    width: 250px;
+  width: 600;
+  height: 300;
 }
 
 div.desc {
-    padding: 20px;
-    text-align: center;
-    color: #000;
+  padding: 15px;
+  text-align: center;
+  color: #FFF2AA;
+}
 
-
+.responsive {
+  padding: 100 60px;
+  float: left;
 }
 
 
-ul.projects
-{
-	margin-top: 50px;
-	margin-left: 180px;
-	margin-right: 500px;
-
-	list-style-type: none;
-
+.project_desc{
+	padding: 30 300px;
+	max-width: 1000;
+	color: #172457;
 }
 
-ul.projects
- li{
-	display: inline-block;
-
-
-}
-
-div.video{
-	margin-top: 100px;
-	margin-bottom: 100px;
-}
-
-div.info{
-	margin-top: 50px;
-}
-
-div.info{
-	font-size: 120%;
-	margin-top: 20px;
-	margin-left: 200px;
-	margin-right: 400px;
-	color: #000;
-}
-
-div.ending{
-	margin-top: 480px;
-	margin-bottom: 20px;
+.iframe_wrapper{
 	text-align: center;
-	list-style-type: none;
-	color: #000
 }
