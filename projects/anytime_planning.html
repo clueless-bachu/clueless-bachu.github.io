@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Real-Time Planning</title>
+	<link rel="stylesheet" type="text/css" href="../style.css">
+</head>
+<body>
+			<ul class="main-nav">
+				<li><a href="../index.html">Home</a></li>
+				<li><a href="../projects.html">Robotics</a></li>
+				<li><a href="../astronomy.html">Astronomy</a></li>								
+			</ul>
+
+		<h1 class="project_title">Anytime Planning with RRT*</h1>
+		<div class ="project_desc">
+			<p>
+				The RRT algorithm is an incremental sampling based algorithm that efficiently computes
+				motion plans but it converges far from the optimal solution. RRT* on the other hand, computes feasible solution quickly but also converges at an optimal solution. In practical scenario, anytime algorithms are favored that keeps on improving the solution towards an optimal solution. This report is an implementation of a conference paper titled "Anytime Motion Planning using RRT*" where it presents two key extensions of RRT∗ algorithm. Committed trajectories and Branch-and-Bound Tree adaptations, which together enables the algorithm to make more efficient use of computation time online, resulting in an anytime algorithm for real-time
+				implementation. We implemented the method using ROS Gazebo as our simulation environment
+				and compared the operation of the RRT and RRT∗ using Python and OpenCV. We demonstrated the experimental results using Turtlebot 3 for displaying the path generation.
+			A brief description of RRT* is as follows:-
+			
+			</p>
+			<br>
+			<ul>
+		 			<li>Create the root of the tree as the starting state</li>
+		 			<li>Pick a random state in the freespace.</li>
+		 			<li>Find the nearest node in the tree to the random state</li>
+		 			<li>Create a child node in the direction of random state</li>
+		 			<li>Connect the child node to a parent in its vicinity with the lowest cost</li>
+		 			<li>Update the cost of the child</li>
+		 			<li>Repeat while nearest node to the goal is greater than a threshold</li>
+		 			<li>Backtrack from goal node to start node</li>
+		 		</ul>
+		
+		</div>
+		
+		<div class="iframe_wrapper">
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/VH-MvKDfg-E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
+		 
+		<div class ="project_desc">
+		<h>Committed Trajectory</h>
+		<p>Commit to an initial fraction of the path computed
+			during Offline Planning
+			and go into control phase.
+			While the control phase is in progress, parallely and
+			asynchronously, more nodes are added to the tree
+			which can potentially find better paths. Once the
+			committed trajectory is traversed, the new path is used.
+		</p>
+		<br>
+		<h>Branch-and-Bound</h>
+		<p>
+		To remove redundancies, nodes with a cost higher that
+		the total initial path cost are deleted. Hence, new
+		redundant branches are not created
+		</p>
+		 </div>
+</body>
+
+</html>
+

@@ -49,12 +49,19 @@ ul.main-nav
 	transition: 0.5s ease
 }
 
-h1.titles{
+h1.astronomy_title{
 	text-align: center;
 	font-size: 70px;
 	padding: 100px;	
-	background: url('retro_back.png');
-	color: #172457;
+	background: url('pictures/astronomy_back.jpg');
+	color: #F0EFEF;
+}
+h1.project_title{
+	text-align: center;
+	font-size: 70px;
+	padding: 100px;	
+	background: url('pictures/project_back.jpg');
+	color: #AA3939;
 }
 
 div.gallery {
@@ -78,15 +85,16 @@ div.desc {
 }
 
 .responsive {
-  padding: 100 60px;
+  padding: 100 150px;
   float: left;
 }
 
 
 .project_desc{
-	padding: 30 300px;
-	max-width: 1000;
-	color: #172457;
+	padding: 30 400px;
+	max-width: 1500;
+	font-size: 150%;
+	text-align: left;
 }
 
 .iframe_wrapper{
