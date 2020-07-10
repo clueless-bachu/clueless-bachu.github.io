@@ -54,6 +54,7 @@ h1.astronomy_title{
 	font-size: 70px;
 	padding: 100px;	
 	background: url('pictures/astronomy_back.jpg');
+	/*background-size: cover;*/
 	color: #F0EFEF;
 }
 h1.project_title{
@@ -61,7 +62,18 @@ h1.project_title{
 	font-size: 70px;
 	padding: 100px;	
 	background: url('pictures/project_back.jpg');
-	color: #AA3939;
+	background-size: cover;
+	color: #F0EFEF;
+}
+
+h1.blogs_title{
+	text-align: center;
+	font-size: 70px;
+	padding: 100px;	
+	background: url('pictures/blogs_back.jpg');
+	background-size: cover;
+	color: #F0EFEF;
+
 }
 
 div.gallery {
@@ -74,8 +86,8 @@ div.gallery:hover {
 }
 
 div.gallery img {
-  width: 600;
-  height: 300;
+  width: 400;
+  height: 220;
 }
 
 div.desc {
@@ -85,7 +97,7 @@ div.desc {
 }
 
 .responsive {
-  padding: 100 150px;
+  padding: 50 140px;
   float: left;
 }
 
