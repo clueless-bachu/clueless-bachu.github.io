@@ -6,23 +6,15 @@
 }
 
 .info{
-	/*background-color: #FDFDFD;*/
-	font-size: 27px;
-	padding: 10px 10px;
-	position: absolute;
-	top: 150px;
-	left: 250px;
-	max-width:400px;
-	color: #FDFDFD;
-}
-
-.ending{
-	position: absolute;
-	top: 700px;
-	left: 100px;
-	font-size: 25px;
-	color: #ffff;
-	max-width:400px;
+	background-color: #FFFEFA;
+	border: 5px solid #AA3939;
+	padding: 50px;
+	margin: auto;
+	margin-top: 150px;
+	font-size: 200%;
+	max-width:60%;
+	color: #000000;
+	text-align: justify;
 }
 
 ul.main-nav{
@@ -58,7 +50,6 @@ h1.astronomy_title{
 	font-size: 70px;
 	padding: 100px;	
 	background: url('pictures/astronomy_back.jpg');
-	/*background-size: cover;*/
 	color: #F0EFEF;
 }
 h1.project_title{
@@ -106,11 +97,12 @@ div.desc {
 }
 
 
+
 .project_desc{
-	padding: 30 400px;
-	max-width: 1500;
-	font-size: 150%;
-	text-align: left;
+
+  font-size: 150%;
+  margin:50px auto;
+  width: 75%;
 }
 
 .iframe_wrapper{
